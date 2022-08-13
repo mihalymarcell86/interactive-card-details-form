@@ -1,0 +1,25 @@
+@use "utilities/global" as *;
+
+.icon {
+  margin: 0 auto rem(35px);
+}
+
+.thank_you {
+  @include setFont(rem(28px), 36px);
+  letter-spacing: 3.42222px;
+  text-align: center;
+  text-transform: uppercase;
+  color: color(very-dark-violet);
+  margin-bottom: em(16px, 28px);
+}
+
+.paragraph {
+  @include setFont(rem(18px), 23px);
+  text-align: center;
+  color: color(dark-grayish-violet);
+  margin-bottom: em(48px, 18px);
+}
+
+.button {
+  composes: button from "./CardDetailForm.module.scss";
+}

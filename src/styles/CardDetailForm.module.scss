@@ -37,9 +37,6 @@
     &::placeholder {
       opacity: 0.25;
     }
-    &:invalid {
-      background-color: red;
-    }
   }
   abbr {
     text-decoration: none;
