@@ -1,0 +1,65 @@
+@use "utilities/global" as *;
+
+.wrapper {
+  width: 100%;
+  height: rem(251px);
+  position: relative;
+  margin-bottom: rem(48px);
+  color: color(white);
+  & > *,
+  output {
+    position: absolute;
+  }
+}
+
+.back {
+  width: rem(286px);
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.front {
+  width: rem(286px);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  width: rem(54px);
+  left: rem(19px);
+  top: rem(17.6px);
+}
+
+.card_no {
+  @include setFont(rem(18px), 23px);
+  letter-spacing: 2.2px;
+  left: rem(19px);
+  bottom: rem(48.6px);
+}
+
+.card_details {
+  @include setFont(rem(9px), 11px);
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+}
+
+.card_name {
+  composes: card_details;
+  bottom: rem(19.56px);
+  left: rem(19px);
+}
+
+.expiry_date {
+  composes: card_details;
+  bottom: rem(19.56px);
+  right: rem(20.89px);
+}
+
+.cvc {
+  composes: card_details;
+  right: rem(37.02px);
+  bottom: rem(74px);
+}

@@ -1,6 +1,30 @@
 @use "utilities/global" as *;
 
+@include setup;
+
 body {
   font-family: $font-space-grotesk;
   font-weight: 500;
+  position: relative;
+  padding: rem(32px) rem(16px) rem(45px);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(240px);
+    z-index: -3;
+    background: {
+      color: color(very-dark-violet);
+      image: url("../images/bg-main-mobile.png");
+      repeat: no-repeat;
+      size: cover;
+    }
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
