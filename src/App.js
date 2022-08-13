@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <body>
+      0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
+      Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+      e.g. 123 Confirm
+      {/*<!-- Completed state start --> */}
+      Thank you! We've added your card details Continue
+      <div class="attribution">
+        Challenge by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          Frontend Mentor
         </a>
-      </header>
-    </div>
+        . Coded by{" "}
+        <a
+          href="https://www.github.com/mihalymarcell86"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Marcell Mihály
+        </a>
+        .
+      </div>
+    </body>
   );
 }
 
