@@ -22,6 +22,17 @@ body {
       size: cover;
     }
   }
+  @media (min-width: $br-desktop) {
+    padding: 0 rem(227px) 0 rem(164px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    &:before {
+      background-image: url("../images/bg-main-desktop.png");
+      width: rem(483px);
+      height: 100%;
+    }
+  }
 }
 
 img {

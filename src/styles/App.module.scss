@@ -1,0 +1,11 @@
+@use "utilities/global" as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $br-desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: rem(127px);
+  }
+}

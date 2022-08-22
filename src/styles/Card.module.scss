@@ -11,6 +11,12 @@
   output {
     position: absolute;
   }
+  @media (min-width: $br-desktop) {
+    width: rem(541px);
+    height: rem(527px);
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
 }
 
 .back {
@@ -18,6 +24,11 @@
   top: 0;
   right: 0;
   z-index: -2;
+  @media (min-width: $br-desktop) {
+    width: rem(447px);
+    top: auto;
+    bottom: 0;
+  }
 }
 
 .front {
@@ -25,6 +36,11 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+  @media (min-width: $br-desktop) {
+    width: rem(447px);
+    top: 0;
+    bottom: auto;
+  }
 }
 
 .logo {
@@ -32,6 +48,11 @@
   width: rem(54px);
   left: rem(19px);
   top: rem(17.6px);
+  @media (min-width: $br-desktop) {
+    width: rem(84px);
+    left: rem(32px);
+    top: rem(28px);
+  }
 }
 
 .card_no {
@@ -39,28 +60,49 @@
   letter-spacing: 2.2px;
   left: rem(19px);
   bottom: rem(48.6px);
+  @media (min-width: $br-desktop) {
+    @include setFont(rem(28px), 36px);
+    letter-spacing: 3.42222px;
+    left: rem(32px);
+    bottom: rem(70px);
+  }
 }
 
 .card_details {
   @include setFont(rem(9px), 11px);
   letter-spacing: 1.28571px;
   text-transform: uppercase;
+  @media (min-width: $br-desktop) {
+    @include setFont(rem(14px), 18px);
+  }
 }
 
 .card_name {
   composes: card_details;
   bottom: rem(19.56px);
   left: rem(19px);
+  @media (min-width: $br-desktop) {
+    left: rem(32px);
+    bottom: rem(26.5px);
+  }
 }
 
 .expiry_date {
   composes: card_details;
   bottom: rem(19.56px);
   right: rem(20.89px);
+  @media (min-width: $br-desktop) {
+    bottom: rem(26.5px);
+    right: rem(31.86px);
+  }
 }
 
 .cvc {
   composes: card_details;
   right: rem(37.02px);
   bottom: rem(74px);
+  @media (min-width: $br-desktop) {
+    right: rem(57px);
+    bottom: rem(116px);
+  }
 }

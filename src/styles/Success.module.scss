@@ -1,5 +1,11 @@
 @use "utilities/global" as *;
 
+.wrapper {
+  @media (min-width: $br-desktop) {
+    width: rem(381px);
+  }
+}
+
 .icon {
   margin: 0 auto rem(35px);
 }
