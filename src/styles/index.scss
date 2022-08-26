@@ -23,13 +23,15 @@ body {
     }
   }
   @media (min-width: $br-desktop) {
-    padding: 0 rem(227px) 0 rem(164px);
+    padding-block: 0;
+    padding-left: div(164, 1440) * 100%;
+    padding-right: div(227, 1440) * 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     &:before {
       background-image: url("../images/bg-main-desktop.png");
-      width: rem(483px);
+      width: lerp_min($br-desktop, rem(200px), 1440px, rem(483px));
       height: 100%;
     }
   }

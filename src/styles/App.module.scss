@@ -3,9 +3,12 @@
 .main {
   display: flex;
   flex-direction: column;
+  max-width: rem(500px);
+  margin: 0 auto;
   @media (min-width: $br-desktop) {
+    max-width: none;
     flex-direction: row;
     align-items: center;
-    gap: rem(127px);
+    gap: lerp_min($br-desktop, rem(50px), 1440px, rem(127px));
   }
 }

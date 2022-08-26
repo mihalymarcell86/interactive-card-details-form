@@ -12,8 +12,8 @@
     position: absolute;
   }
   @media (min-width: $br-desktop) {
-    width: rem(541px);
-    height: rem(527px);
+    width: lerp_min($br-desktop, rem(350px), 1440px, rem(541px));
+    height: lerp_min($br-desktop, rem(251px), 1440px, rem(527px));
     margin-bottom: 0;
     flex-shrink: 0;
   }
@@ -25,7 +25,7 @@
   right: 0;
   z-index: -2;
   @media (min-width: $br-desktop) {
-    width: rem(447px);
+    width: lerp_min($br-desktop, rem(286px), 1440px, rem(447px));
     top: auto;
     bottom: 0;
   }
@@ -37,7 +37,7 @@
   left: 0;
   z-index: -1;
   @media (min-width: $br-desktop) {
-    width: rem(447px);
+    width: lerp_min($br-desktop, rem(286px), 1440px, rem(447px));
     top: 0;
     bottom: auto;
   }
@@ -49,9 +49,9 @@
   left: rem(19px);
   top: rem(17.6px);
   @media (min-width: $br-desktop) {
-    width: rem(84px);
-    left: rem(32px);
-    top: rem(28px);
+    width: lerp_min($br-desktop, rem(54px), 1440px, rem(84px));
+    left: lerp_min($br-desktop, rem(19px), 1440px, rem(32px));
+    top: lerp_min($br-desktop, rem(17.6px), 1440px, rem(28px));
   }
 }
 
@@ -61,10 +61,10 @@
   left: rem(19px);
   bottom: rem(48.6px);
   @media (min-width: $br-desktop) {
-    @include setFont(rem(28px), 36px);
-    letter-spacing: 3.42222px;
-    left: rem(32px);
-    bottom: rem(70px);
+    font-size: lerp_min($br-desktop, rem(18px), 1440px, rem(28px));
+    line-height: lerp_min($br-desktop, 2.2px, 1440px, 3.42222px);
+    left: lerp_min($br-desktop, rem(19px), 1440px, rem(32px));
+    bottom: lerp_min($br-desktop, rem(48.6px), 1440px, rem(70px));
   }
 }
 
@@ -73,7 +73,8 @@
   letter-spacing: 1.28571px;
   text-transform: uppercase;
   @media (min-width: $br-desktop) {
-    @include setFont(rem(14px), 18px);
+    font-size: lerp_min($br-desktop, rem(9px), 1440px, rem(14px));
+    line-height: lerp_min($br-desktop, 11px, 1440px, 18px);
   }
 }
 
@@ -82,8 +83,8 @@
   bottom: rem(19.56px);
   left: rem(19px);
   @media (min-width: $br-desktop) {
-    left: rem(32px);
-    bottom: rem(26.5px);
+    left: lerp_min($br-desktop, rem(19px), 1440px, rem(32px));
+    bottom: lerp_min($br-desktop, rem(19.56px), 1440px, rem(26.5px));
   }
 }
 
@@ -92,8 +93,8 @@
   bottom: rem(19.56px);
   right: rem(20.89px);
   @media (min-width: $br-desktop) {
-    bottom: rem(26.5px);
-    right: rem(31.86px);
+    bottom: lerp_min($br-desktop, rem(19.56px), 1440px, rem(26.5px));
+    right: lerp_min($br-desktop, rem(20.89px), 1440px, rem(31.86px));
   }
 }
 
@@ -102,7 +103,7 @@
   right: rem(37.02px);
   bottom: rem(74px);
   @media (min-width: $br-desktop) {
-    right: rem(57px);
-    bottom: rem(116px);
+    right: lerp_min($br-desktop, rem(37.02px), 1440px, rem(57px));
+    bottom: lerp_min($br-desktop, rem(74px), 1440px, rem(116px));
   }
 }
