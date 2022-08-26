@@ -12,3 +12,9 @@ $colors: (
   very-dark-violet: hsl(278, 68%, 11%),
   red: hsl(0, 100%, 66%),
 );
+
+$gradient-border: linear-gradient(
+  180deg,
+  hsla(249, 99%, 64%, 1),
+  hsla(278, 94%, 30%, 1)
+);
