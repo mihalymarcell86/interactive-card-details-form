@@ -77,6 +77,13 @@
   }
 }
 
+.input_error {
+  &:before {
+    background-image: none;
+    background-color: color(red);
+  }
+}
+
 .name,
 .number {
   grid-column: 1 / 3;

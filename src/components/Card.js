@@ -3,13 +3,13 @@ import cardFront from "../images/bg-card-front.png";
 import cardLogo from "../images/card-logo.svg";
 import scss from "../styles/Card.module.scss";
 
-function Card(props) {
+function Card({ data }) {
   return (
     <div className={scss.wrapper}>
       <div className={scss.back}>
         <img src={cardBack} alt="" />
         <output className={scss.cvc} form="card_detail_form" htmlFor="cvc">
-          000
+          {data.cvc || "000"}
         </output>
       </div>
       <div className={scss.front}>
@@ -20,21 +20,21 @@ function Card(props) {
           form="card_detail_form"
           htmlFor="number"
         >
-          0000 0000 0000 0000
+          {data.number || "0000 0000 0000 0000"}
         </output>
         <output
           className={scss.card_name}
           form="card_detail_form"
           htmlFor="name"
         >
-          Jane Appleseed
+          {data.name || "Jane Appleseed"}
         </output>
         <output
           className={scss.expiry_date}
           form="card_detail_form"
           htmlFor="exp_month exp_year"
         >
-          00/00
+          {data.expMonth || "00"}/{data.expYear || "00"}
         </output>
       </div>
     </div>
