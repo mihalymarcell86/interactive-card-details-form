@@ -60,11 +60,12 @@
   letter-spacing: 2.2px;
   left: rem(19px);
   bottom: rem(48.6px);
+  height: rem(23px);
   @media (min-width: $br-desktop) {
     font-size: lerp_min($br-desktop, rem(18px), 1440px, rem(28px));
-    line-height: lerp_min($br-desktop, 2.2px, 1440px, 3.42222px);
     left: lerp_min($br-desktop, rem(19px), 1440px, rem(32px));
     bottom: lerp_min($br-desktop, rem(48.6px), 1440px, rem(70px));
+    height: lerp_min($br-desktop, rem(23px), 1440px, rem(36px));
   }
 }
 
