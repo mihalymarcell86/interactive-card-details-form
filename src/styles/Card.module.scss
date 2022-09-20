@@ -66,6 +66,7 @@
     left: lerp_min($br-desktop, rem(19px), 1440px, rem(32px));
     bottom: lerp_min($br-desktop, rem(48.6px), 1440px, rem(70px));
     height: lerp_min($br-desktop, rem(23px), 1440px, rem(36px));
+    letter-spacing: lerp_min($br-desktop, 2.2px, 1440px, 3.42222px);
   }
 }
 
