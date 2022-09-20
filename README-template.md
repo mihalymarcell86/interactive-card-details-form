@@ -6,7 +6,7 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +14,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,22 +28,28 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+## Mobile
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](.screenshots/screenshot-mobile.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+![](.screenshots/screenshot-mobile-error.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![](.screenshots/screenshot-mobile-success.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+## Desktop
+
+![](.screenshots/screenshot-desktop.png)
+
+![](.screenshots/screenshot-desktop-error.png)
+
+![](.screenshots/screenshot-desktop-success.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/mihalymarcell86/interactive-card-details-form](https://github.com/mihalymarcell86/interactive-card-details-form)
+- Live Site URL: [https://interactive-card-details-form-psi.vercel.app/](https://interactive-card-details-form-psi.vercel.app/)
 
 ## My process
 
@@ -59,15 +62,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-## Controlled vs. Uncontrolled Components
+Controlled vs. Uncontrolled Components:
 
 Refs would have been handy, because I could have used the Contraint Validation API to evaluate the form inputs, but I soon ran into some walls with them, so I decided to use controlled inputs instead. Though, it requires more coding, it is much more flexible.
 
-### Continued development
+Gradient outlines:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Creating the active states for the input fields proved to be quite challenging. `border-image` is unfortunately incompatible with `border-radius`, so I had to come up with a hack. This is the fist time, however, that `:focus-within` came to the rescue.
 
 ### Useful resources
 
@@ -75,6 +76,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GitHub - [@mihalymarcell86](https://github.com/mihalymarcell86)
+- Frontend Mentor - [@mihalymarcell86](https://www.frontendmentor.io/profile/mihalymarcell86)
