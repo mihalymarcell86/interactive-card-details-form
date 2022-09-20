@@ -32,19 +32,19 @@ Users should be able to:
 
 ## Mobile
 
-![](.screenshots/screenshot-mobile.png)
+![](./screenshots/screenshot-mobile.png)
 
-![](.screenshots/screenshot-mobile-error.png)
+![](./screenshots/screenshot-mobile-error.png)
 
-![](.screenshots/screenshot-mobile-success.png)
+![](./screenshots/screenshot-mobile-success.png)
 
 ## Desktop
 
-![](.screenshots/screenshot-desktop.png)
+![](./screenshots/screenshot-desktop.png)
 
-![](.screenshots/screenshot-desktop-error.png)
+![](./screenshots/screenshot-desktop-error.png)
 
-![](.screenshots/screenshot-desktop-success.png)
+![](./screenshots/screenshot-desktop-success.png)
 
 ### Links
 
