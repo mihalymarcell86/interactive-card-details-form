@@ -2,31 +2,48 @@
 
 .form {
   margin-inline: rem(8px);
+  align-self: flex-start;
   @media (min-width: $br-desktop) {
     margin: 0;
+    margin-top: lerp_min(1160px, 0px, 1440px, 88px);
   }
 }
 
 .inputs {
   color: color(very-dark-violet);
-  display: grid;
-  grid-template-columns: div(152, 327) * 100% 1fr;
-  column-gap: rem(11px);
-  row-gap: rem(20px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
   margin-bottom: rem(28px);
   @media (min-width: $br-desktop) {
-    grid-template-columns: div(170, 381) * 100% 1fr;
-    row-gap: rem(26px);
-    column-gap: rem(20px);
+    gap: rem(26px);
     margin-bottom: rem(40px);
   }
 
+  .inputs__grid {
+    display: grid;
+    grid-template-columns: div(152, 327) * 100% 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-auto-flow: column;
+    column-gap: rem(11px);
+    row-gap: rem(9px);
+    font-size: 0;
+    .label,
+    label {
+      margin-bottom: 0;
+    }
+    @media (min-width: $br-desktop) {
+      column-gap: rem(20px);
+    }
+  }
+
   label,
-  legend {
+  .label {
     @include setFont(rem(12px), 15px);
     letter-spacing: 2px;
     margin-bottom: em(9px, 12px);
     display: block;
+    text-transform: uppercase;
   }
 
   input {
@@ -84,6 +101,12 @@
   }
 }
 
+.error_message {
+  @include setFont(rem(12px), 15px);
+  color: color(red);
+  margin-top: em(8px, 12px);
+}
+
 .name,
 .number {
   grid-column: 1 / 3;
@@ -92,7 +115,7 @@
 .exp_date {
   border: 0;
   display: flex;
-  gap: rem(11px);
+  gap: rem(8px);
   @media (min-width: $br-desktop) {
     gap: rem(10px);
   }

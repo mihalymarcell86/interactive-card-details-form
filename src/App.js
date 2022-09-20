@@ -7,26 +7,37 @@ import Success from "./components/Success";
 import scss from "./styles/App.module.scss";
 
 function App() {
-  const [cardIsValid, setCardIsValid] = useState(false);
-  const [cardDetails, setCardDetails] = useState({
+  const defaultCardDetails = {
     name: "",
     number: "",
     cvc: "",
     expMonth: "",
     expYear: "",
-  });
+  };
+
+  const [cardIsValid, setCardIsValid] = useState(false);
+  const [cardDetails, setCardDetails] = useState(defaultCardDetails);
 
   function updateCardDetails(updatedData) {
     setCardDetails((prev) => ({ ...prev, ...updatedData }));
+  }
+
+  function reset() {
+    setCardDetails(defaultCardDetails);
+    setCardIsValid(false);
   }
 
   return (
     <main className={scss.main}>
       <Card data={cardDetails} />
       {cardIsValid ? (
-        <Success />
+        <Success onReset={reset} />
       ) : (
-        <CardDetailForm data={cardDetails} onChange={updateCardDetails} />
+        <CardDetailForm
+          data={cardDetails}
+          onChange={updateCardDetails}
+          onValidate={() => setCardIsValid(true)}
+        />
       )}
     </main>
   );
